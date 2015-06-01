@@ -4,7 +4,7 @@ EEG Machine Learning Challenge, Python and MATLAB (Scholar project, 2015)
 **The goal of this challenge consisted to determine the right sleep stage (W, R, N1, N2, N3) from EEG signal of 30 seconds; dataset contains 10178 and 10087 EEG for train and test respectively.**
 
 ### Features extraction
-First of all, I have written my own Python script (see: cluster util.py, https://github.com/martin-prillard/shavadoop) to apply distributed and parallel computing on the school's network, like a cluster. It divide the computing time by more than 100
+First of all, I have written my own Python script (see: https://github.com/martin-prillard/cluster-computing) to apply distributed and parallel computing on the school's network, like a cluster. It divide the computing time by more than 100
 than 100.
 
 #### PyEEG / PyREM / MNE
