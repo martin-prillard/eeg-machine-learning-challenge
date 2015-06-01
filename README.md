@@ -38,7 +38,7 @@ I used Matlab algorithms to compute the Rosensteins Lyapunov exponents, the Lemp
 I also tried the NMF and Beta NMF with Itakura-Saito divergente. Finally, I tried MLLab and spindles.
 
 ### Features selection
-I had 317 features, without the BOW histograms features. Consequently, I did a feature selection to decrease model's complexity and avoid overfitting. Firstly, I tried a PCA, SelectKBest, RFECV (Feature ranking with recursive feature elimination and cross-validated selection of the best number of features), and ExtraTreesClassifer to keep only the 10-100th discriminatory features. Finally, Iimplemented my own Greedy Algorithm to increase the Cross-validation score on the train sample.
+I had 317 features, without the BOW histograms features. Consequently, I did a feature selection to decrease model's complexity and avoid overfitting. Firstly, I tried a PCA, SelectKBest, RFECV (Feature ranking with recursive feature elimination and cross-validated selection of the best number of features), and ExtraTreesClassifer to keep only the 10-100th discriminatory features. Finally, I implemented my own Greedy Algorithm to increase the Cross-validation score on the train sample.
 
 ### Classification
 I kept for a long time with a simple logistic regression, it gave me my best score (more than 0.77).
