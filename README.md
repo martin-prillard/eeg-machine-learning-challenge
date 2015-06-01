@@ -25,7 +25,7 @@ Thanks to the PyEEG library, I extracted these features:
 Then, I replaced some of PyEEG's features by PyREM's features, more reliable. Thanks to my cluster computing script, it was very fast (even for entropy calculation).
 Sparse Fast Fourier Transform from MNE and the wavelets (RSE/kurtosis/std) were also very useful.
 
-### BOW-Kmeans
+#### Bag Of Words (BOW) - Kmeans
 Local patches extracted from images or videos are treated as words and the codebook is constructed by clustering all the local patches in the training dataset. Similar to the extension of the bag of words representation in computer vision, we here extend the bag-of-words representation to characterize biomedical time series by regarding local segments extracted from time series as words and treat the time series as documents. Codebook is a set of predefined words, which are also called codewords, compute by k-means.
 
 Consequently, I implemented all the work of Jin Wang in Python (available for Matlab), and distributed it on my cluster. I distributed local segments extraction, which computes wavelet coefficient, then the Fast Fourier Transform (FFT) from
