@@ -7,7 +7,7 @@ EEG Machine Learning Challenge, Python and MATLAB (Scholar project, 2015)
 First of all, I have written my own Python script (see: https://github.com/martin-prillard/cluster-computing) to apply distributed and parallel computing on the school's network. It divided the features's computing time by more than 100.
 than 100.
 
-#### PyEEG / PyREM / MNE
+##### PyEEG / PyREM / MNE
 Thanks to the PyEEG library, I extracted these features:
 - DFA: Detrended Fuctuation Analysis
 - PFD: Petrosian Fractal Dimension
@@ -25,7 +25,7 @@ Thanks to the PyEEG library, I extracted these features:
 Then, I replaced some of PyEEG's features by PyREM's features, more reliable. Thanks to my cluster computing script, it was very fast (even for entropy calculation).
 Sparse Fast Fourier Transform from MNE and the wavelets (RSE/kurtosis/std) were also very useful.
 
-#### Bag Of Words (BOW) - Kmeans
+##### Bag Of Words (BOW) - Kmeans
 Local patches extracted from images or videos are treated as words and the codebook is constructed by clustering all the local patches in the training dataset. Similar to the extension of the bag of words representation in computer vision, we here extend the bag-of-words representation to characterize biomedical time series by regarding local segments extracted from time series as words and treat the time series as documents. Codebook is a set of predefined words, which are also called codewords, compute by k-means.
 
 Consequently, I implemented all the work of Jin Wang in Python (available for Matlab), and distributed it on my cluster. I distributed local segments extraction, which computes wavelet coefficient, then the Fast Fourier Transform (FFT) from
@@ -33,7 +33,7 @@ each segments.
 The codebook was build by clustering (mini-batch Kmeans++, 1500 centroids and 24 millions of segments) local segments from training data. The next step, also distributed, assigned one codeword for each local segment, to finally build one histogram
 representation for each time series (sum the number of each codeword that exists in the time series). Histogram's size depends of the codebook size (200-1500).
 
-#### Other features attempts
+##### Other features attempts
 I used Matlab algorithms to compute the Rosensteins Lyapunov exponents, the Lempel-Ziv (measure of binary sequence complexity) and wiener Kolmogorov, which are supposed to be truly relevant.
 I also tried the NMF and Beta NMF with Itakura-Saito divergente. Finally, I tried MLLab and spindles.
 
