@@ -1,6 +1,8 @@
 # eeg-machine-learning-challenge
 EEG Machine Learning Challenge, Python and MATLAB (Scholar project, 2015)
 
+http://slides.com/martinprillard/deck#/
+
 **The goal of this challenge consisted to determine the right sleep stage (W, R, N1, N2, N3) from EEG signal of 30 seconds; dataset contains 10178 and 10087 EEG for train and test respectively.**
 
 ### Features extraction
